@@ -135,3 +135,71 @@ button{
 .item h2{
     color: hsl(233, 8%, 79%);
 }
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobil-menu{
+    position: absolute;
+    cursor: pointer;
+    width: 200px;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    border-left: 1px solid gray;
+}
+
+.mobil-menu h3{
+    margin: 20px;
+    font-weight: 400;
+}
+
+#close{
+   margin: 20px 0 100px 170px;
+}
+
+.displayed{
+    display: inline;
+}
+
+.unfocused{
+    background-color: gray;
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 768px;
+        
+    }
+
+    .bottom{
+        display: block;
+        margin: 10px;
+    }
+
+    .left-bottom{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .top{
+        display: block;
+        margin: 10px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    header{
+        max-width: 768px;
+    }
+
+    .menu{
+        display: inline;
+    }
+}
